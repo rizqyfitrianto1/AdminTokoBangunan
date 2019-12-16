@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TB KOKOH BERDIRI</string>
+    <string name="title_login_failed">Login Failed</string>
+    <string name="message_login_failed">Username or password invalid!</string>
+</resources>

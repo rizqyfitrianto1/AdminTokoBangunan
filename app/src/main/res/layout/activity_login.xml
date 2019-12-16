@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/tokbang"
+        android:scaleType="fitXY"
+        android:layout_height="200dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/colorWhite"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:src="@drawable/logorumah"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/app_name"
+                android:layout_gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:hint="admin"
+                android:drawableEnd="@drawable/ic_account"
+                android:paddingEnd="10dp"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:hint="admin"
+                android:drawableEnd="@drawable/ic_security"
+                android:paddingEnd="10dp"
+                android:inputType="textPassword"
+                android:textColor="@color/colorBlack"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:text="Login"
+                android:layout_margin="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/bg_corner"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
